@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean Boutique Coffee Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="Equipment.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-xl bg-body-tertiary sticky-top">
+        <div class="container-fluid">
+            <!-- Logo image on the left side -->
+            <a class="navbar-brand" href="index.html">
+                <img src="Images/logoBB.png" alt="Bean Boutique" width="150" height="45">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="navbar-quote mx-auto">
+                    <span><h4>Cup of joy in hand, ready to slay</h4></span>
+                </div>
+                <!-- Right-aligned navigation links -->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Coffee Selection
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Drinks.html">Drinks</a></li>
+                            <li><a class="dropdown-item" href="Appitizers.html">Appitizers</a></li>
+                            <li><a class="dropdown-item" href="HomeCoffee.html">Home Coffee</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Equipment.html">Equipment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Events.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html"><i class="bi bi-cart3"></i> Cart</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Offers.html">Offers</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="video-container">
+        <video autoplay muted loop width="100%"  poster="thumbnail.jpg">
+            <source src="Images/Equipment SC.mp4" type="video/mp4">
+            <source src="Images/Equipment SC.mp4" type="video/webm">
+            Your browser does not support the video tag.
+        </video>
+        
+    </div>
+
+    <div class="popular_items">
+        <h2 class="descriptions-h2"><em>Coffee Brewer</em></h2>
+        <div class="container">
+            <div class="row">
+                <!-- Adjust column class to display two items per row on large screens -->
+                <div class="col-lg-6 col-md-6 col-sm-6 col-12 mb-4 d-flex justify-content-center">
+                    <div class="card">
+                        <img src="Images/CM1.jpg" class="card-img-top" alt="Hot Chocolate">
+                        <div class="card-body">
+                            <h5 class="card-title">French Press</h5>
+                            <p class="card-text text-justify">The French Press brews rich, full-bodied coffee by steeping coarsely ground beans in hot water, using a plunger with a fine mesh filter.</p>
+                            <p>Grind Size: Coarse.<br>
+                                Ratio: 1:15 coffee to water.<br>
+                                Temp & Time: 200°F (93°C), steep for 4 minutes.<br>
+                                Cleanup: Rinse the filter and pot after use.</p>
+                            <p>$50</p>
+                            <div class="quantity-controls d-flex align-items-center mb-3 justify-content-center justify-content-md-start">
+                                <button class="btn decreaseQuantity d-none">-</button>
+                                <input type="number" class="quantity-input form-control mx-2 text-center d-none" value="1" min="1">
+                                <button class="btn increaseQuantity d-none">+</button>
+                            </div>
+                            <button class="btn add-to-cart" data-product-name="French Press" data-product-price="50">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat for each item, updating only the image, title, and price -->
+                <div class="col-lg-6 col-md-6 col-sm-6 col-12 mb-4 d-flex justify-content-center">
+                    <div class="card">
+                        <img src="Images/CM2.jpg" class="card-img-top" alt="Lemonade">
+                        <div class="card-body">
+                            <h5 class="card-title">Pour-Over</h5>
+                            <p class="card-text text-justify">Pour-over brewing allows for precise control over extraction, highlighting unique flavors pouring of hot water over coffee grounds.</p>
+                            <p>Grind Size: Medium.<br>
+                                Ratio: 1:16 coffee to water.<br>
+                                Temp & Time: 200°F (93°C), brew for 3-4 minutes.<br>
+                                Technique: Pour in a circular motion for even saturation.</p>
+                            <p>$50</p>
+                            <div class="quantity-controls d-flex align-items-center mb-3 justify-content-center justify-content-md-start">
+                                <button class="btn decreaseQuantity d-none">-</button>
+                                <input type="number" class="quantity-input form-control mx-2 text-center d-none" value="1" min="1">
+                                <button class="btn increaseQuantity d-none">+</button>
+                            </div>
+                            <button class="btn add-to-cart" data-product-name="Pour-Over" data-product-price="50">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-12 mb-4 d-flex justify-content-center">
+                    <div class="card">
+                        <img src="Images/CM3.jpg" class="card-img-top" alt="Lemonade">
+                        <div class="card-body">
+                            <h5 class="card-title">Aeropress</h5>
+                            <p class="card-text text-justify">The Aeropress uses air pressure to brew smooth coffee quickly, making it ideal for espresso-like coffee and cold brews.</p>
+                            <p>Grind Size: Fine to medium.<br>
+                                Ratio: 1:15 coffee to water.<br>
+                                Temp & Time: 200°F (93°C), brew for 30-60 seconds.<br>
+                                Cleanup: Clean immediately after use.</p>
+                            <p>$60</p>
+                            <div class="quantity-controls d-flex align-items-center mb-3 justify-content-center justify-content-md-start">
+                                <button class="btn decreaseQuantity d-none">-</button>
+                                <input type="number" class="quantity-input form-control mx-2 text-center d-none" value="1" min="1">
+                                <button class="btn increaseQuantity d-none">+</button>
+                            </div>
+                            <button class="btn add-to-cart" data-product-name="Aeropress" data-product-price="60">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-12 mb-4 d-flex justify-content-center">
+                    <div class="card">
+                        <img src="Images/CM4.jpg" class="card-img-top" alt="Lemonade">
+                        <div class="card-body">
+                            <h5 class="card-title">Drip Coffee Maker</h5>
+                            <p class="card-text text-justify">A convenient machine that brews multiple cups of coffee automatically by dripping hot water through coffee grounds.</p>
+                            <p>Grind Size: Medium.<br>
+                                Ratio: 1:17 coffee to water.<br>
+                                Water Quality: Use filtered water.<br>
+                                Maintenance: Clean regularly and replace filters.</p>
+                            <p>$40</p>
+                            <div class="quantity-controls d-flex align-items-center mb-3 justify-content-center justify-content-md-start">
+                                <button class="btn decreaseQuantity d-none">-</button>
+                                <input type="number" class="quantity-input form-control mx-2 text-center d-none" value="1" min="1">
+                                <button class="btn increaseQuantity d-none">+</button>
+                            </div>
+                            <button class="btn add-to-cart" data-product-name="Drip Coffee Maker" data-product-price="40">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-12 mb-4 d-flex justify-content-center">
+                    <div class="card">
+                        <img src="Images/CM5.jpg" class="card-img-top" alt="Lemonade">
+                        <div class="card-body">
+                            <h5 class="card-title">Cold Brew Maker</h5>
+                            <p class="card-text text-justify">Cold brew makers steep coffee grounds in cold water for 12-24 hours, resulting in a smooth, less acidic coffee concentrate.</p>
+                            <p>Grind Size: Coarse.<br>
+                                Ratio: 1:4 coffee to water.<br>
+                                Steeping: 12-24 hours in the fridge.<br>
+                                Storage: Keep concentrate in the fridge for up to two weeks.</p>
+                            <p>$200</p>
+                            <div class="quantity-controls d-flex align-items-center mb-3 justify-content-center justify-content-md-start">
+                                <button class="btn decreaseQuantity d-none">-</button>
+                                <input type="number" class="quantity-input form-control mx-2 text-center d-none" value="1" min="1">
+                                <button class="btn increaseQuantity d-none">+</button>
+                            </div>
+                            <button class="btn add-to-cart" data-product-name="Cold Breew Maker" data-product-price="200">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-12 mb-4 d-flex justify-content-center">
+                    <div class="card">
+                        <img src="Images/CM6.jpg" class="card-img-top" alt="Lemonade">
+                        <div class="card-body">
+                            <h5 class="card-title">Moka Pot</h5>
+                            <p class="card-text text-justify">The Moka pot brews strong, espresso-like coffee using steam pressure from boiling water, making it a favorite for rich coffee lovers.</p>
+                            <p>Grind Size: Fine to medium.<br>
+                                Filling: Level the coffee grounds without packing.<br>
+                                Heat: Medium heat until bubbling starts.<br>
+                                Serving: Remove from heat to prevent bitterness.</p>
+                            <p>$40</p>
+                            <div class="quantity-controls d-flex align-items-center mb-3 justify-content-center justify-content-md-start">
+                                <button class="btn decreaseQuantity d-none">-</button>
+                                <input type="number" class="quantity-input form-control mx-2 text-center d-none" value="1" min="1">
+                                <button class="btn increaseQuantity d-none">+</button>
+                            </div>
+                            <button class="btn add-to-cart" data-product-name="Moka Pot" data-product-price="40">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Sign Up for 10% Discount</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="signupForm">
+                        <div class="mb-3">
+                            <label for="signupEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="signupEmail" placeholder="name@example.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="signupPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="signupPassword" required>
+                        </div>
+                        <button type="submit" class="btn">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white mt-5">
+        <div class="container text-center text-md-left">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5 class="text-uppercase mtop">About Us</h5>
+                    <p>
+                        Join us for a unique coffee experience. Explore our events and workshops, and savor the essence of every sip.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="text-uppercase mtop">Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Email: info@beanboutique.com</a></li>
+                        <li><a href="#" class="text-white">Phone: +1 (555) 123-4567</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="text-uppercase mtop">Follow Us</h5>
+                    <ul class="list-unstyled d-flex justify-content-center">
+                        <li class="me-3">
+                            <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+                        </li>
+                        <li class="me-3">
+                            <a href="#" class="text-white"><i class="bi bi-twitter"></i></a>
+                        </li>
+                        <li class="me-3">
+                            <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+                        </li>
+                        <li class="me-3">
+                            <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-center py-3 mtop2">
+            <p>&copy; 2024 Bean Boutique. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+
+    
+    
+</body>
+</html>

@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean Boutique Coffee Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="Drinks.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-xl bg-body-tertiary sticky-top">
+        <div class="container-fluid">
+            <!-- Logo image on the left side -->
+            <a class="navbar-brand" href="index.html">
+                <img src="Images/logoBB.png" alt="Bean Boutique" width="150" height="45">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="navbar-quote mx-auto">
+                    <span><h4>Cup of joy in hand, ready to slay</h4></span>
+                </div>
+                <!-- Right-aligned navigation links -->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Coffee Selection
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Drinks.html">Drinks</a></li>
+                            <li><a class="dropdown-item" href="Appitizers.html">Appitizers</a></li>
+                            <li><a class="dropdown-item" href="HomeCoffee.html">Home Coffee</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Equipment.html">Equipment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Events.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html"><i class="bi bi-cart3"></i> Cart</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Offers.html">Offers</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="body-container">
+ 
+        <div class="popular_items">
+            <h2 class="descriptions-h2"><em>Coffee</em></h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 d-flex justify-content-center"> <!-- Center the card -->
+                        <div class="card"> <!-- Set a max width for xs -->
+                            <img src="Images/Americano.jpg" class="card-img-top" alt="Best-Seller-1">
+                            <div class="card-body">
+                                <h5 class="card-title">Americano</h5>
+                                <p class="card-text text-justify">A bold and smooth coffee crafted from rich espresso blended with hot water, delivering an intense and satisfying flavor in every sip.</p>
+                                <p >$9</p> <!-- Added price here -->
+                                <div class="quantity-controls d-flex align-items-center mb-3 justify-content-center justify-content-md-start">
+                                    <button class="btn decreaseQuantity d-none">-</button>
+                                    <input type="number" class="quantity-input form-control mx-2 text-center d-none" value="1" min="1" >
+                                    <button class="btn increaseQuantity d-none  ">+</button>
+                                </div>
+                                <button class="btn add-to-cart" data-product-name="Americano" data-product-price="9" >Add to Cart</button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 d-flex justify-content-center"> <!-- Center the card -->
+                        <div class="card"> <!-- Set a max width for xs -->
+                            <img src="Images/Espresso.jpg" class="card-img-top" alt="Best-Seller-1">
+                            <div class="card-body">
+                                <h5 class="card-title">Espresso</h5>
+                                <p class="card-text text-justify">A rich, concentrated coffee made by pressing hot water through finely-ground beans, offering bold, intense flavor in a small shot .</p>
+                                <p >$9</p> <!-- Added price here -->
+                                <div class="quantity-controls d-flex align-items-center mb-3 justify-content-center justify-content-md-start">
+                                    <button class="btn decreaseQuantity d-none">-</button>
+                                    <input type="number" class="quantity-input form-control mx-2 text-center d-none" value="1" min="1" >
+                                    <button class="btn increaseQuantity d-none  ">+</button>
+                                </div>
+                                <button class="btn add-to-cart" data-product-name="Espresso" data-product-price="9" >Add to Cart</button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 d-flex justify-content-center"> <!-- Center the card -->
+                        <div class="card"> <!-- Set a max width for xs -->
+                            <img src="Images/Cappuccino.jpg" class="card-img-top" alt="Best-Seller-1">
+                            <div class="card-body">
+                                <h5 class="card-title">Cappuccino</h5>
+                                <p class="card-text text-justify">A balanced mix of espresso, steamed milk, and foam, creating a creamy, smooth coffee with a touch of sweetness.</p>
+                                <p >$10</p> <!-- Added price here -->
+                                <div class="quantity-controls d-flex align-items-center mb-3 justify-content-center justify-content-md-start">
+                                    <button class="btn decreaseQuantity d-none">-</button>
+                                    <input type="number" class="quantity-input form-control mx-2 text-center d-none" value="1" min="1" >
+                                    <button class="btn increaseQuantity d-none  ">+</button>
+                                </div>
+                                <button class="btn add-to-cart" data-product-name="Cappuccino" data-product-price="10" >Add to Cart</button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 d-flex justify-content-center"> <!-- Center the card -->
+                        <div class="card"> <!-- Set a max width for xs -->
+                            <img src="Images/Latte.jpg" class="card-img-top" alt="Best-Seller-1">
+                            <div class="card-body">
+                                <h5 class="card-title">Latte</h5>
+                                <p class="card-text text-justify">A creamy mix of espresso and steamed milk, topped with froth, offering a smooth and soothing coffee experience with a hint of sweetness.</p>
+                                <p >$12</p> <!-- Added price here -->
+                                <div class="quantity-controls d-flex align-items-center mb-3 justify-content-center justify-content-md-start">
+                                    <button class="btn decreaseQuantity d-none">-</button>
+                                    <input type="number" class="quantity-input form-control mx-2 text-center d-none" value="1" min="1" >
+                                    <button class="btn increaseQuantity d-none  ">+</button>
+                                </div>
+                                <button class="btn add-to-cart" data-product-name="Latte" data-product-price="12" >Add to Cart</button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 d-flex justify-content-center"> <!-- Center the card -->
+                        <div class="card"> <!-- Set a max width for xs -->
+                            <img src="Images/Macchiato.jpg" class="card-img-top" alt="Best-Seller-1">
+                            <div class="card-body">
+                                <h5 class="card-title">Macchiato</h5>
+                                <p class="card-text text-justify">A bold espresso shot touched with steamed milk or foam, offering a strong coffee flavor and a smooth, creamy, and tasty finish.</p>
+                                <p >$13</p> <!-- Added price here -->
+                                <div class="quantity-controls d-flex align-items-center mb-3 justify-content-center justify-content-md-start">
+                                    <button class="btn decreaseQuantity d-none">-</button>
+                                    <input type="number" class="quantity-input form-control mx-2 text-center d-none" value="1" min="1" >
+                                    <button class="btn increaseQuantity d-none  ">+</button>
+                                </div>
+                                <button class="btn add-to-cart" data-product-name="Macchiato" data-product-price="13" >Add to Cart</button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 d-flex justify-content-center"> <!-- Center the card -->
+                        <div class="card"> <!-- Set a max width for xs -->
+                            <img src="Images/Mocca.jpg" class="card-img-top" alt="Best-Seller-1">
+                            <div class="card-body">
+                                <h5 class="card-title">Mocca</h5>
+                                <p class="card-text text-justify">A blend of rich espresso, steamed milk, and decadent chocolate syrup, topped with whipped cream for a sweet coffee experience.</p>
+                                <p >$8</p> <!-- Added price here -->
+                                <div class="quantity-controls d-flex align-items-center mb-3 justify-content-center justify-content-md-start">
+                                    <button class="btn decreaseQuantity d-none">-</button>
+                                    <input type="number" class="quantity-input form-control mx-2 text-center d-none" value="1" min="1" >
+                                    <button class="btn increaseQuantity d-none  ">+</button>
+                                </div>
+                                <button class="btn add-to-cart" data-product-name="Mocca" data-product-price="8" >Add to Cart</button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 d-flex justify-content-center"> <!-- Center the card -->
+                        <div class="card"> <!-- Set a max width for xs -->
+                            <img src="Images/Affogato.jpg" class="card-img-top" alt="Best-Seller-1">
+                            <div class="card-body">
+                                <h5 class="card-title">Affogato</h5>
+                                <p class="card-text text-justify">A delightful dessert with creamy vanilla ice cream topped with hot espresso, creating a luscious blend of warm and cold flavors.</p>
+                                <p >$15</p> <!-- Added price here -->
+                                <div class="quantity-controls d-flex align-items-center mb-3 justify-content-center justify-content-md-start">
+                                    <button class="btn decreaseQuantity d-none">-</button>
+                                    <input type="number" class="quantity-input form-control mx-2 text-center d-none" value="1" min="1" >
+                                    <button class="btn increaseQuantity d-none  ">+</button>
+                                </div>
+                                <button class="btn add-to-cart" data-product-name="Affogato" data-product-price="15" >Add to Cart</button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 d-flex justify-content-center"> <!-- Center the card -->
+                        <div class="card"> <!-- Set a max width for xs -->
+                            <img src="Images/Irish.jpg" class="card-img-top" alt="Best-Seller-1">
+                            <div class="card-body">
+                                <h5 class="card-title">Irish Coffee</h5>
+                                <p class="card-text text-justify">A warm blend of hot coffee, smooth Irish whiskey, and sugar, topped with whipped cream for an indulgent, comforting treat.</p>
+                                <p >$18</p> <!-- Added price here -->
+                                <div class="quantity-controls d-flex align-items-center mb-3 justify-content-center justify-content-md-start">
+                                    <button class="btn decreaseQuantity d-none">-</button>
+                                    <input type="number" class="quantity-input form-control mx-2 text-center d-none" value="1" min="1" >
+                                    <button class="btn increaseQuantity d-none  ">+</button>
+                                </div>
+                                <button class="btn add-to-cart" data-product-name="Irish Coffee" data-product-price="18" >Add to Cart</button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="popular_items">
+            <h2 class="descriptions-h2"><em>Non-Coffee</em></h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 d-flex justify-content-center">
+                        <div class="card">
+                            <img src="Images/HotChocolate.jpg" class="card-img-top" alt="Hot Chocolate">
+                            <div class="card-body">
+                                <h5 class="card-title">Hot Chocolate</h5>
+                                <p class="card-text text-justify">Our hot chocolate is creamy, rich, and made with premium cocoa, offering a perfect cozy treat that indulges your senses with every sip.</p>
+                                <p>$8</p> <!-- Price updated -->
+                                <div class="quantity-controls d-flex align-items-center mb-3 justify-content-center justify-content-md-start">
+                                    <button class="btn decreaseQuantity d-none">-</button>
+                                    <input type="number" class="quantity-input form-control mx-2 text-center d-none" value="1" min="1">
+                                    <button class="btn increaseQuantity d-none">+</button>
+                                </div>
+                                <button class="btn add-to-cart" data-product-name="Hot Chocolate" data-product-price="8">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 d-flex justify-content-center">
+                        <div class="card">
+                            <img src="Images/Lemonade.jpg" class="card-img-top" alt="Lemonade">
+                            <div class="card-body">
+                                <h5 class="card-title">Lemonade</h5>
+                                <p class="card-text text-justify">Our refreshing lemonade, crafted from fresh lemons, is the ideal drink for cooling down and revitalizing your senses on a hot day.</p>
+                                <p>$5</p> <!-- Price updated -->
+                                <div class="quantity-controls d-flex align-items-center mb-3 justify-content-center justify-content-md-start">
+                                    <button class="btn decreaseQuantity d-none">-</button>
+                                    <input type="number" class="quantity-input form-control mx-2 text-center d-none" value="1" min="1">
+                                    <button class="btn increaseQuantity d-none">+</button>
+                                </div>
+                                <button class="btn add-to-cart" data-product-name="Lemonade" data-product-price="5">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 d-flex justify-content-center">
+                        <div class="card">
+                            <img src="Images/Smoothies.jpg" class="card-img-top" alt="Smoothies">
+                            <div class="card-body">
+                                <h5 class="card-title">Smoothies</h5>
+                                <p class="card-text text-justify">Our fruit smoothies are a delightful and nutritious blend of fresh ingredients, expertly crafted for a refreshing and flavorful.</p>
+                                <p>$7</p> <!-- Price updated -->
+                                <div class="quantity-controls d-flex align-items-center mb-3 justify-content-center justify-content-md-start">
+                                    <button class="btn decreaseQuantity d-none">-</button>
+                                    <input type="number" class="quantity-input form-control mx-2 text-center d-none" value="1" min="1">
+                                    <button class="btn increaseQuantity d-none">+</button>
+                                </div>
+                                <button class="btn add-to-cart" data-product-name="Smoothies" data-product-price="7">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 d-flex justify-content-center">
+                        <div class="card">
+                            <img src="Images/AppleCider.jpg" class="card-img-top" alt="Apple Cider">
+                            <div class="card-body">
+                                <h5 class="card-title">Apple Cider</h5>
+                                <p class="card-text text-justify">Warm and spiced, our apple cider offers the perfect fall beverage experience, inviting you to savor the cozy flavors of the season.</p>
+                                <p>$6</p> <!-- Price updated -->
+                                <div class="quantity-controls d-flex align-items-center mb-3 justify-content-center justify-content-md-start">
+                                    <button class="btn decreaseQuantity d-none">-</button>
+                                    <input type="number" class="quantity-input form-control mx-2 text-center d-none" value="1" min="1">
+                                    <button class="btn increaseQuantity d-none">+</button>
+                                </div>
+                                <button class="btn add-to-cart" data-product-name="Apple Cider" data-product-price="6">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 d-flex justify-content-center">
+                        <div class="card">
+                            <img src="Images/Milkshake.jpg" class="card-img-top" alt="Milkshake">
+                            <div class="card-body">
+                                <h5 class="card-title">Milkshake</h5>
+                                <p class="card-text text-justify">Indulge in our thick and creamy milkshakes, offered in a delightful variety of flavors that will surely satisfy your sweet tooth and cravings.</p>
+                                <p>$10</p> <!-- Price updated -->
+                                <div class="quantity-controls d-flex align-items-center mb-3 justify-content-center justify-content-md-start">
+                                    <button class="btn decreaseQuantity d-none">-</button>
+                                    <input type="number" class="quantity-input form-control mx-2 text-center d-none" value="1" min="1">
+                                    <button class="btn increaseQuantity d-none">+</button>
+                                </div>
+                                <button class="btn add-to-cart" data-product-name="Milkshake" data-product-price="10">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 d-flex justify-content-center">
+                        <div class="card">
+                            <img src="Images/PremiumSpringWater.jpg" class="card-img-top" alt="Premium Spring Water">
+                            <div class="card-body">
+                                <h5 class="card-title">Premium Spring Water</h5>
+                                <p class="card-text text-justify">Sourced from pristine springs, our premium spring water provides pure refreshment and hydration, ensuring a naturally invigorating.</p>
+                                <p>$4</p> <!-- Price updated -->
+                                <div class="quantity-controls d-flex align-items-center mb-3 justify-content-center justify-content-md-start">
+                                    <button class="btn decreaseQuantity d-none">-</button>
+                                    <input type="number" class="quantity-input form-control mx-2 text-center d-none" value="1" min="1">
+                                    <button class="btn increaseQuantity d-none">+</button>
+                                </div>
+                                <button class="btn add-to-cart" data-product-name="Premium Spring Water" data-product-price="4">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 d-flex justify-content-center">
+                        <div class="card">
+                            <img src="Images/FruitPunch.jpg" class="card-img-top" alt="Fruit Punch">
+                            <div class="card-body">
+                                <h5 class="card-title">Fruit Punch</h5>
+                                <p class="card-text text-justify">Experience a vibrant blend of fresh fruit juices, ideal for a refreshing pick-me-up that revitalizes your senses and boosts your energy.</p>
+                                <p>$6</p> <!-- Price updated -->
+                                <div class="quantity-controls d-flex align-items-center mb-3 justify-content-center justify-content-md-start">
+                                    <button class="btn decreaseQuantity d-none">-</button>
+                                    <input type="number" class="quantity-input form-control mx-2 text-center d-none" value="1" min="1">
+                                    <button class="btn increaseQuantity d-none">+</button>
+                                </div>
+                                <button class="btn add-to-cart" data-product-name="Fruit Punch" data-product-price="6">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 d-flex justify-content-center">
+                        <div class="card">
+                            <img src="Images/HotMulledCider.jpg" class="card-img-top" alt="Hot Mulled Cider">
+                            <div class="card-body">
+                                <h5 class="card-title">Hot Mulled Cider</h5>
+                                <p class="card-text text-justify">Enjoy a warm, spiced treat with a rich apple flavor, making it the perfect beverage for cozy winter evenings by the fire with someone.</p>
+                                <p>$7</p> <!-- Price updated -->
+                                <div class="quantity-controls d-flex align-items-center mb-3 justify-content-center justify-content-md-start">
+                                    <button class="btn decreaseQuantity d-none">-</button>
+                                    <input type="number" class="quantity-input form-control mx-2 text-center d-none" value="1" min="1">
+                                    <button class="btn increaseQuantity d-none">+</button>
+                                </div>
+                                <button class="btn add-to-cart" data-product-name="Hot Mulled Cider" data-product-price="7">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="popular_items">
+            <h2 class="descriptions-h2"><em>Tea</em></h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 d-flex justify-content-center"> <!-- Center the card -->
+                        <div class="card"> <!-- Set a max width for xs -->
+                            <img src="Images/Lemon Tea.jpg" class="card-img-top" alt="Best-Seller-1">
+                            <div class="card-body">
+                                <h5 class="card-title">Lemon Tea</h5>
+                                <p class="card-text text-justify">A refreshing brew made with fragrant tea infused with zesty lemon, offering a perfect balance of tangy and soothing flavors.</p>
+                                <p >$7</p> <!-- Added price here -->
+                                <div class="quantity-controls d-flex align-items-center mb-3 justify-content-center justify-content-md-start">
+                                    <button class="btn decreaseQuantity d-none">-</button>
+                                    <input type="number" class="quantity-input form-control mx-2 text-center d-none" value="1" min="1" >
+                                    <button class="btn increaseQuantity d-none  ">+</button>
+                                </div>
+                                <button class="btn add-to-cart" data-product-name="Lemon Tea" data-product-price="7" >Add to Cart</button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 d-flex justify-content-center"> <!-- Center the card -->
+                        <div class="card"> <!-- Set a max width for xs -->
+                            <img src="Images/Mango Tea.jpg" class="card-img-top" alt="Best-Seller-1">
+                            <div class="card-body">
+                                <h5 class="card-title">Mango Tea</h5>
+                                <p class="card-text text-justify">A fruity and vibrant blend of black or green tea infused with sweet mango pieces, delivering a tropical flavor and refreshing aroma.</p>
+                                <p >$10</p> <!-- Added price here -->
+                                <div class="quantity-controls d-flex align-items-center mb-3 justify-content-center justify-content-md-start">
+                                    <button class="btn decreaseQuantity d-none">-</button>
+                                    <input type="number" class="quantity-input form-control mx-2 text-center d-none" value="1" min="1" >
+                                    <button class="btn increaseQuantity d-none  ">+</button>
+                                </div>
+                                <button class="btn add-to-cart" data-product-name="Mango Tea" data-product-price="10" >Add to Cart</button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 d-flex justify-content-center"> <!-- Center the card -->
+                        <div class="card"> <!-- Set a max width for xs -->
+                            <img src="Images/Mint Tea.jpg" class="card-img-top" alt="Best-Seller-1">
+                            <div class="card-body">
+                                <h5 class="card-title">Mint Tea</h5>
+                                <p class="card-text text-justify">A refreshing herbal infusion made from fresh mint leaves, perfect for soothing the stomach and revitalizing the spirit.</p>
+                                <p >$8</p> <!-- Added price here -->
+                                <div class="quantity-controls d-flex align-items-center mb-3 justify-content-center justify-content-md-start">
+                                    <button class="btn decreaseQuantity d-none">-</button>
+                                    <input type="number" class="quantity-input form-control mx-2 text-center d-none" value="1" min="1" >
+                                    <button class="btn increaseQuantity d-none  ">+</button>
+                                </div>
+                                <button class="btn add-to-cart" data-product-name="Mint Tea" data-product-price="8" >Add to Cart</button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 d-flex justify-content-center"> <!-- Center the card -->
+                        <div class="card"> <!-- Set a max width for xs -->
+                            <img src="Images/Black Tea.jpg" class="card-img-top" alt="Best-Seller-1">
+                            <div class="card-body">
+                                <h5 class="card-title">Black Tea</h5>
+                                <p class="card-text text-justify">Enjoy a bold brew made from fully oxidized tea leaves, offering rich flavor and higher caffeine content for an invigorating boost.</p>
+                                <p >$7</p> <!-- Added price here -->
+                                <div class="quantity-controls d-flex align-items-center mb-3 justify-content-center justify-content-md-start">
+                                    <button class="btn decreaseQuantity d-none">-</button>
+                                    <input type="number" class="quantity-input form-control mx-2 text-center d-none" value="1" min="1" >
+                                    <button class="btn increaseQuantity d-none  ">+</button>
+                                </div>
+                                <button class="btn add-to-cart" data-product-name="Black Tea" data-product-price="7" >Add to Cart</button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 d-flex justify-content-center"> <!-- Center the card -->
+                        <div class="card"> <!-- Set a max width for xs -->
+                            <img src="Images/Oolong Tea.jpg" class="card-img-top" alt="Best-Seller-1">
+                            <div class="card-body">
+                                <h5 class="card-title">Oolong Tea</h5>
+                                <p class="card-text text-justify">A partially oxidized tea known for its complex flavors and aromas, ranging from floral and fruity to creamy and nutty.</p>
+                                <p >$10</p> <!-- Added price here -->
+                                <div class="quantity-controls d-flex align-items-center mb-3 justify-content-center justify-content-md-start">
+                                    <button class="btn decreaseQuantity d-none">-</button>
+                                    <input type="number" class="quantity-input form-control mx-2 text-center d-none" value="1" min="1" >
+                                    <button class="btn increaseQuantity d-none  ">+</button>
+                                </div>
+                                <button class="btn add-to-cart" data-product-name="Oolong Tea" data-product-price="10" >Add to Cart</button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 d-flex justify-content-center"> <!-- Center the card -->
+                        <div class="card"> <!-- Set a max width for xs -->
+                            <img src="Images/Peach Tea.jpg" class="card-img-top" alt="Best-Seller-1">
+                            <div class="card-body">
+                                <h5 class="card-title">Peach Tea</h5>
+                                <p class="card-text text-justify">A refreshing blend of black or green tea infused with sweet peach flavors, offering a smooth tea notes.</p>
+                                <p >$11</p> <!-- Added price here -->
+                                <div class="quantity-controls d-flex align-items-center mb-3 justify-content-center justify-content-md-start">
+                                    <button class="btn decreaseQuantity d-none">-</button>
+                                    <input type="number" class="quantity-input form-control mx-2 text-center d-none" value="1" min="1" >
+                                    <button class="btn increaseQuantity d-none  ">+</button>
+                                </div>
+                                <button class="btn add-to-cart" data-product-name="Peach Tea" data-product-price="11" >Add to Cart</button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 d-flex justify-content-center"> <!-- Center the card -->
+                        <div class="card"> <!-- Set a max width for xs -->
+                            <img src="Images/RedTea.jpg" class="card-img-top" alt="Best-Seller-1">
+                            <div class="card-body">
+                                <h5 class="card-title">Red Tea</h5>
+                                <p class="card-text text-justify">A naturally herbal infusion made from the rooibos plant, featuring a smooth, sweet flavor with hints of nuttiness.</p>
+                                <p >$10</p> <!-- Added price here -->
+                                <div class="quantity-controls d-flex align-items-center mb-3 justify-content-center justify-content-md-start">
+                                    <button class="btn decreaseQuantity d-none">-</button>
+                                    <input type="number" class="quantity-input form-control mx-2 text-center d-none" value="1" min="1" >
+                                    <button class="btn increaseQuantity d-none  ">+</button>
+                                </div>
+                                <button class="btn add-to-cart" data-product-name="Red Tea" data-product-price="10" >Add to Cart</button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4 d-flex justify-content-center"> <!-- Center the card -->
+                        <div class="card"> <!-- Set a max width for xs -->
+                            <img src="Images/Jasmine Tea.jpg" class="card-img-top" alt="Best-Seller-1">
+                            <div class="card-body">
+                                <h5 class="card-title">Jasmine Tea</h5>
+                                <p class="card-text text-justify">A fragrant blend of green tea infused with jasmine blossoms, offering a delicate floral aroma and a light, refreshing flavor .</p>
+                                <p >$10</p> <!-- Added price here -->
+                                <div class="quantity-controls d-flex align-items-center mb-3 justify-content-center justify-content-md-start">
+                                    <button class="btn decreaseQuantity d-none">-</button>
+                                    <input type="number" class="quantity-input form-control mx-2 text-center d-none" value="1" min="1" >
+                                    <button class="btn increaseQuantity d-none  ">+</button>
+                                </div>
+                                <button class="btn add-to-cart" data-product-name="Jasmine Tea" data-product-price="10" >Add to Cart</button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Sign Up for 10% Discount</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="signupForm">
+                        <div class="mb-3">
+                            <label for="signupEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="signupEmail" placeholder="name@example.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="signupPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="signupPassword" required>
+                        </div>
+                        <button type="submit" class="btn">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white mt-5">
+        <div class="container text-center text-md-left">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5 class="text-uppercase mtop">About Us</h5>
+                    <p>
+                        Join us for a unique coffee experience. Explore our events and workshops, and savor the essence of every sip.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="text-uppercase mtop">Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Email: info@beanboutique.com</a></li>
+                        <li><a href="#" class="text-white">Phone: +1 (555) 123-4567</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="text-uppercase mtop">Follow Us</h5>
+                    <ul class="list-unstyled d-flex justify-content-center">
+                        <li class="me-3">
+                            <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+                        </li>
+                        <li class="me-3">
+                            <a href="#" class="text-white"><i class="bi bi-twitter"></i></a>
+                        </li>
+                        <li class="me-3">
+                            <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+                        </li>
+                        <li class="me-3">
+                            <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-center py-3 mtop2">
+            <p>&copy; 2024 Bean Boutique. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+
+    
+    
+</body>
+</html>
